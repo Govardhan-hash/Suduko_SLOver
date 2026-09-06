@@ -171,22 +171,8 @@ def Add():
             PrintB()
             o = input("want to continue?: y/n")
 #Main body
-#Add()
+Add()
 start_time = time.perf_counter()
-GD =  ["_",
-                  5,1,7,6,0,0,0,3,4,
-                  2,8,9,0,0,4,0,0,0,
-                  3,4,6,2,0,5,0,9,0,
-                  6,0,2,0,0,0,0,1,0,
-                  0,3,8,0,0,6,0,4,7,
-                  0,0,0,0,0,0,0,0,0,
-                  0,9,0,0,0,0,0,7,8,
-                  7,0,3,4,0,0,5,6,0,
-                  0,0,0,0,0,0,0,0,0]
-ANS = "0 5 1 7 6 9 8 2 3 4 2 8 9 1 3 4 7 5 6 3 4 6 2 7 5 8 9 1 6 7 2 8 4 9 3 1 5 1 3 8 5 2 6 9 4 7 9 5 4 7 1 3 6 8 2 4 9 5 3 6 2 1 7 8 7 2 3 4 8 1 5 6 9 8 6 1 9 5 7 4 2 3"
-for i in range(1, 82):
-      if GD[i] > 0:
-            su[i] = GD[i]
 
 PrintB()
 
@@ -237,13 +223,6 @@ while v < 82:
 
 PrintB()
 end_time = time.perf_counter()
-Ans = ANS.split()
-e = 0
-for i in range(1,82):
-      if su[i] == int(Ans[i]):
-            e = e + 1
-if e == 81:
-      print("correct answer")
 print(f"Executed in {end_time - start_time:0.8f} seconds")
 
 
